@@ -1,40 +1,58 @@
-<form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    <style>
+      .data-form {
+        margin: 10px;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+  <form>
     <div class="data-form">
-        <label for="Firstname">Firstname</label>
-        <input type="text" name="Firstname" id="Firstname">
+        <label for="firstname">Firstname</label>
+        <input type="text" name="firstname" id="firstname">
     </div>
     <div class="data-form">
-        <label for="Name">Name</label>
-        <input type="text" name="Name" id="Name">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
     </div>
     <div class="data-form">
-        <label for="Age">Age</label>
-        <input type="number" name="Age" min="1" max="199" id="Age">
+        <label for="age">Age</label>
+        <input type="number" name="age" min="1" max="199" id="age">
     </div>
     <div class="data-form">
-        <label for="Phone">Phone</label>
-        <input type="tel" name="Phone" id="Phone">
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone">
     </div>
     <div class="data-form">
-        <label for="Email">Email</label>
-        <input type="email" name="Email" id="Email">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
     </div>
     <div class="data-form">
-        <label for="Student">Student at 42?</label>
+        <label for="student">Student at 42?</label>
         <div class="checkbox">
-	  <input name="Student" id="Student" type="checkbox">
-	  <label for="Student">Yes</label>
+	  <input name="student" id="student" type="checkbox">
+	  <label for="student">Yes</label>
         </div>
     </div>
     <div class="data-form">
         <label for="Gender">Gender</label>
-                <input name="Gender" id="Male" type="radio">
+                <input name="Gender" id="gender_male" type="radio" value="male">
                 <label for="Male">Male</label>
-                <input name="Gender" id="Female" type="radio">
+                <input name="Gender" id="gender_female" type="radio" value="female">
                 <label for="Female">Female</label>
-                <input name="Gender" id="Other" type="radio">
+                <input name="Gender" id="gender_other" type="radio" value="other">
                 <label for="Other">Other</label>
     <div class="data-form">
-        <button type="button" class="btn" name="button" style="default" id="button">Submit</button>
+        <button type="submit" class="btn" name="button" style="default" id="button" onclick="displayFormContents();">Submit</button>
     </div>
-</form>
+  </form>
+  </body>
+</html>
